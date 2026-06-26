@@ -6,6 +6,11 @@ const nextConfig = {
   env: {
     EMAIL_ADDRESS: process.env.EMAIL_ADDRESS,
   },
+  experimental: {
+    useDeploymentId: true,
+    // Optionally, use with Server Actions
+    useDeploymentIdServerActions: true,
+  },
 };
 
 module.exports = nextConfig;
