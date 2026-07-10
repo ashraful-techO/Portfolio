@@ -40,11 +40,11 @@ export const skills = [
   },
   {
     category: "Frameworks & Libraries",
-    items: ["React", "Next.js", "Redux", "Zustand", "Tailwind CSS"],
+    items: ["React", "Next.js", "Redux", "Zustand", "Tailwind CSS", "Liquid"],
   },
   {
     category: "Tools & Platforms",
-    items: ["Git", "Vite", "Figma", "Vercel"],
+    items: ["Git", "Vite", "Figma", "Vercel", "Shopify"],
   },
 ];
 
@@ -65,6 +65,14 @@ export const projects = [
     link: "https://weatherapp-ashraful-tech.netlify.app/",
     repo: "https://github.com/ashraful/fullstack",
   },
+  {
+    title: "Shopify",
+    img: "https://i.ibb.co.com/dJ087q8d/desktop.png",
+    description: "Shopify",
+    tech: ["Liquid", "CSS", "JavaScript"],
+    link: "https://github.com/ashraful-techO/shopify",
+    repo: "https://github.com/ashraful-techO/shopify",
+  },
 ];
 
 export const experience = [
@@ -73,6 +81,18 @@ export const experience = [
     company: "Zaynax Health Ltd",
     company_url: "https://www.zaynaxhealth.com/",
     period: "2025 — Present",
+    points: [
+      "Worked on building dynamic and interactive user interfaces for various healthcare products",
+      "Implemented responsive designs ensuring seamless user experience across different devices",
+      "Collaborated with backend developers to integrate APIs and optimize data flow",
+      "Optimized application performance and ensured cross-browser compatibility",
+    ],
+  },
+  {
+    role: "Freelance Web Designer",
+    company: "Brother Agency",
+    company_url: "",
+    period: "2024 — Present",
     points: [
       "Worked on building dynamic and interactive user interfaces for various healthcare products",
       "Implemented responsive designs ensuring seamless user experience across different devices",
