@@ -26,10 +26,10 @@ export function Hero() {
               {profile.tagline}
             </p>
             <div className="mt-8 flex flex-no-wrap gap-2 items-center">
-              <Button href="#projects" size="lg">
+              <Button href="#projects" size="sm">
                 View My Work
               </Button>
-              <Button href="#contact" variant="outline" size="lg">
+              <Button href="#contact" variant="outline" size="sm">
                 Get In Touch
               </Button>
 

@@ -11,7 +11,7 @@ const CVPreview = () => {
             <Button
                 onClick={() => setIsOpen(true)}
                 variant="secondary"
-                size="lg"
+                size="sm"
                 className="mt-0"
             >
                 Resume
