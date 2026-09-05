@@ -18,6 +18,7 @@ export const profile = {
     },
     // { label: "Email", href: `mailto:${process.env.EMAIL_ADDRESS}` },
   ],
+  cvUrl: "/cv.pdf",
 };
 
 export const about = {

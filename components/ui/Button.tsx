@@ -33,7 +33,7 @@ type LinkProps = BaseProps & { href: string; onClick?: undefined };
 
 export function Button(props: ButtonProps | LinkProps) {
   const { variant = "primary", size = "md", className = "", children } = props;
-  const classes = `${base} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
+  const classes = `${base} ${variantClasses[variant]} ${sizeClasses[size]} ${className} `;
 
   if (props.href) {
     return (

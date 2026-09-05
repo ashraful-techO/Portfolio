@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { SocialLinks } from "@/components/ui/SocialLinks";
 import { profile } from "@/lib/data";
+import CVPreview from "../modules/cv/Cv-preview";
 
 export function Hero() {
   return (
@@ -24,13 +25,22 @@ export function Hero() {
             <p className="mt-6 max-w-xl text-lg text-slate-600 dark:text-slate-400">
               {profile.tagline}
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-8 flex flex-no-wrap gap-2 items-center">
               <Button href="#projects" size="lg">
                 View My Work
               </Button>
               <Button href="#contact" variant="outline" size="lg">
                 Get In Touch
               </Button>
+
+              {/* conditional button download or view */}
+              <Button href="cv.pdf" variant="outline" size="lg">
+                Download CV
+              </Button>
+            </div>
+
+            <div>
+              <CVPreview />
             </div>
             <SocialLinks className="mt-8" />
           </div>
