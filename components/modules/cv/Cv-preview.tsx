@@ -10,7 +10,7 @@ const CVPreview = () => {
         <>
             <Button
                 onClick={() => setIsOpen(true)}
-                variant="secondary"
+                // variant="outline"
                 size="sm"
                 className="mt-0"
             >

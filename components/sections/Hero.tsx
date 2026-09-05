@@ -25,15 +25,16 @@ export function Hero() {
             <p className="mt-6 max-w-xl text-lg text-slate-600 dark:text-slate-400">
               {profile.tagline}
             </p>
-            <div className="mt-8 flex flex-no-wrap gap-2 items-center">
+            <div className="mt-6 flex flex-no-wrap gap-2 items-center">
               <Button href="#projects" size="sm">
-                View My Work
+                My Work
               </Button>
-              <Button href="#contact" variant="outline" size="sm">
+              <Button href="#contact" size="sm">
                 Get In Touch
               </Button>
 
               <CVPreview />
+
             </div>
 
 
