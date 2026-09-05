@@ -33,15 +33,10 @@ export function Hero() {
                 Get In Touch
               </Button>
 
-              {/* conditional button download or view */}
-              <Button href="cv.pdf" variant="outline" size="lg">
-                Download CV
-              </Button>
-            </div>
-
-            <div>
               <CVPreview />
             </div>
+
+
             <SocialLinks className="mt-8" />
           </div>
 
