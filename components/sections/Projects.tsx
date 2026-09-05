@@ -16,7 +16,7 @@ export function Projects() {
       <div className="mt-10 grid gap-6 md:grid-cols-2">
         {projects.map((p) => (
           <Card key={p.title} className="flex flex-col">
-            <div className="w-full m-4">
+            <div className="w-full">
               <img src={p.img} alt="Project Image" className="w-full h-[300px] object-cover" />
             </div>
             <div className="flex items-start justify-between gap-4">
