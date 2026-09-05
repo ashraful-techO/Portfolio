@@ -7,7 +7,7 @@ import CVPreview from "../modules/cv/Cv-preview";
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-indigo-50 to-white dark:from-slate-900 dark:to-slate-950" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-blue-50 to-white dark:from-slate-900 dark:to-slate-950" />
       <Container className="py-24 sm:py-32">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div>
@@ -17,7 +17,7 @@ export function Hero() {
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl dark:text-white">
               Hi, I&apos;m{" "}
-              <span className="text-indigo-600 dark:text-indigo-400">{profile.name}</span>
+              <span className="text-blue-600 dark:text-blue-400">{profile.name}</span>
             </h1>
             <p className="mt-4 text-xl text-slate-600 dark:text-slate-400">
               {profile.role}

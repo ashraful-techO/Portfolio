@@ -12,8 +12,8 @@ export function Experience() {
 
           <div key={e.role + e.company} className="relative">
 
-            <span className="absolute -left-[1.85rem] top-1.5 h-3.5 w-3.5 rounded-full border-2 border-indigo-600 bg-white dark:bg-slate-950" />
-            <p className="text-sm font-semibold text-indigo-600 dark:text-indigo-400">
+            <span className="absolute -left-[1.85rem] top-1.5 h-3.5 w-3.5 rounded-full border-2 border-blue-500 bg-white dark:bg-slate-950" />
+            <p className="text-sm font-semibold text-blue-500 dark:text-blue-400">
               {e.period}
             </p>
             <h3 className="mt-1 text-lg font-semibold text-slate-900 dark:text-white">

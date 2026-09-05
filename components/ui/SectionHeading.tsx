@@ -9,7 +9,7 @@ export function SectionHeading({ eyebrow, title, subtitle, align = "left" }: Sec
   return (
     <div className={align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}>
       {eyebrow && (
-        <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
           {eyebrow}
         </p>
       )}
