@@ -71,7 +71,7 @@ export const projects = [
     img: "https://i.ibb.co.com/dJ087q8d/desktop.png",
     description: "Shopify",
     tech: ["Liquid", "CSS", "JavaScript"],
-    link: "https://github.com/ashraful-techO/shopify",
+    link: "https://www.ghlam.com.au/",
     repo: "https://github.com/ashraful-techO/shopify",
   },
 ];
