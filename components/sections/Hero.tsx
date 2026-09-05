@@ -17,7 +17,7 @@ export function Hero() {
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-6xl dark:text-white">
               Hi, I&apos;m{" "}
-              <span className="text-blue-600 dark:text-blue-400">{profile.name}</span>
+              <span className="text-blue-500 dark:text-blue-400">{profile.name}</span>
             </h1>
             <p className="mt-4 text-xl text-slate-600 dark:text-slate-400">
               {profile.role}
