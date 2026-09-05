@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import Link from "next/link";
 
 type Variant = "primary" | "secondary" | "outline";
-type Size = "sm" | "md" | "lg" | "ss";
+type Size = "sm" | "md" | "lg";
 
 const base =
   "inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 disabled:opacity-50 dark:focus-visible:ring-offset-slate-950";
@@ -19,7 +19,6 @@ const sizeClasses: Record<Size, string> = {
   sm: "h-9 px-4 text-sm",
   md: "h-11 px-5 text-sm",
   lg: "h-12 px-6 text-base",
-  ss: "p-2",
 };
 
 type BaseProps = {
@@ -33,7 +32,7 @@ type ButtonProps = BaseProps & { href?: undefined; onClick?: () => void; type?: 
 type LinkProps = BaseProps & { href: string; onClick?: undefined };
 
 export function Button(props: ButtonProps | LinkProps) {
-  const { variant = "primary", size = "ss", className = "", children } = props;
+  const { variant = "primary", size = "md", className = "", children } = props;
   const classes = `${base} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
 
   if (props.href) {
