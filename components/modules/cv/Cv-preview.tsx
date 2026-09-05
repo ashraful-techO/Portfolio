@@ -10,11 +10,11 @@ const CVPreview = () => {
         <>
             <Button
                 onClick={() => setIsOpen(true)}
-                variant="outline"
+                variant="secondary"
                 size="lg"
-                className="mt-6"
+                className="mt-0"
             >
-                View CV
+                Resume
             </Button>
 
             {isOpen && (
