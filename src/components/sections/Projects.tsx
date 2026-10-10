@@ -1,7 +1,7 @@
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
-import { Badge } from "@/components/ui/Badge";
+import { Badge } from "@/components/ui/badge";
 import { ExternalLinkIcon, GithubIcon } from "@/components/ui/icons";
 import { projects } from "@/lib/data";
 

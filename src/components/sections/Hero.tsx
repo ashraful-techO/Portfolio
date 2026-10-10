@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { SocialLinks } from "@/components/ui/SocialLinks";
 import { profile } from "@/lib/data";
 import CVPreview from "../modules/cv/Cv-preview";
@@ -26,11 +27,11 @@ export function Hero() {
               {profile.tagline}
             </p>
             <div className="mt-6 flex flex-no-wrap gap-2 items-center">
-              <Button href="#projects" size="sm">
-                My Work
+              <Button asChild size="sm">
+                <Link href="#projects">My Work</Link>
               </Button>
-              <Button href="#contact" size="sm">
-                Get In Touch
+              <Button asChild size="sm">
+                <Link href="#contact">Get In Touch</Link>
               </Button>
 
               <CVPreview />

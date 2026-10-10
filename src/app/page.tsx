@@ -6,12 +6,14 @@ import { Projects } from "@/components/sections/Projects";
 import { Experience } from "@/components/sections/Experience";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/Footer";
+import Hero33Page from "@/components/shadcn-space/radix/blocks/hero-33";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
+        <Hero33Page />
         <Hero />
         <About />
         <Skills />

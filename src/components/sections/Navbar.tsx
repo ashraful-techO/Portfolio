@@ -27,7 +27,7 @@ export function Navbar() {
           {profile.name}
         </a>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        {/* <nav className="hidden items-center gap-1 md:flex">
           {links.map((l) => (
             <a
               key={l.href}
@@ -37,17 +37,21 @@ export function Navbar() {
               {l.label}
             </a>
           ))}
-        </nav>
+        </nav> */}
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
           <button
             type="button"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
             className="rounded-lg p-2 text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800 md:hidden"
           >
-            {open ? <XIcon className="h-5 w-5" /> : <MenuIcon className="h-5 w-5" />}
+            {open ? (
+              <XIcon className="h-5 w-5" />
+            ) : (
+              <MenuIcon className="h-5 w-5" />
+            )}
           </button>
         </div>
       </Container>

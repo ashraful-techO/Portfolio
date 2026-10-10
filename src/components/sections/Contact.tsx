@@ -1,5 +1,6 @@
+import Link from "next/link";
 import { Section } from "@/components/ui/Section";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { SocialLinks } from "@/components/ui/SocialLinks";
 import { MailIcon } from "@/components/ui/icons";
 import { profile } from "@/lib/data";
@@ -15,13 +16,11 @@ export function Contact() {
           Have a project in mind or just want to say hi? My inbox is always open.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Button
-            href={`mailto:${profile.email}`}
-            variant="secondary"
-            size="lg"
-          >
-            <MailIcon className="h-5 w-5" />
-            {profile.email}
+          <Button asChild variant="secondary" size="lg">
+            <Link href={`mailto:${profile.email}`}>
+              <MailIcon className="h-5 w-5" />
+              {profile.email}
+            </Link>
           </Button>
         </div>
         <div className="mt-8 flex justify-center">
