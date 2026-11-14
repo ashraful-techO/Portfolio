@@ -7,14 +7,16 @@ import { Experience } from "@/components/sections/Experience";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/Footer";
 import Hero33Page from "@/components/shadcn-space/radix/blocks/hero-33";
+import PartylabsHero from "@/components/blocx/PartylabsHero";
 
 export default function Home() {
   return (
     <>
       {/* <Navbar /> */}
       <main>
-        <Hero33Page />
-        <Hero />
+        {/* <Hero33Page /> */}
+        {/* <Hero /> */}
+        <PartylabsHero />
         <About />
         <Skills />
         <Projects />
