@@ -23,6 +23,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { ThemeToggle } from "../ui/ThemeToggle";
 import StickyButton from "../ui/StickyButton";
+import CVPreview from "../modules/cv/Cv-preview";
 
 /**
  * iPartyLabs Hero — a thesis floating in a 3-D field of party photos.
@@ -783,68 +784,48 @@ export default function PartylabsHero() {
             ))}
           </h1>
 
-          <div className="plh-ctas">
-            {/* <motion.a
-              className="plh-btn plh-btn--dark"
-              href="/#projects"
-              variants={reveal}
-              initial="hidden"
-              animate="show"
-              custom={0.6}
-              onClick={(e) => e.preventDefault()}
-            >
-              Browse Venues
-              <svg
-                className="plh-arrow"
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden
+          <div className="flex justify-center items-center gap-2 flex-wrap">
+            <div className="plh-ctas flex items-center gap-2">
+              <motion.a
+                className="plh-btn plh-btn--dark"
+                href="/#about"
+                variants={reveal}
+                initial="hidden"
+                animate="show"
+                custom={0.6}
               >
-                <path d="M5 12h14M13 6l6 6-6 6" />
-              </svg>
-            </motion.a> */}
-            <motion.a
-              className="plh-btn plh-btn--dark"
-              href="/#about"
-              variants={reveal}
-              initial="hidden"
-              animate="show"
-              custom={0.6}
-              // onClick={(e) => e.preventDefault()}
-            >
-              About me
-              <svg
-                className="plh-arrow"
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden
+                About me
+                <svg
+                  className="plh-arrow"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </motion.a>
+
+              <motion.a
+                className="plh-btn plh-btn--light"
+                href="/#contact"
+                variants={reveal}
+                initial="hidden"
+                animate="show"
+                custom={0.68}
               >
-                <path d="M5 12h14M13 6l6 6-6 6" />
-              </svg>
-            </motion.a>
-            <motion.a
-              className="plh-btn plh-btn--light"
-              href="/#contact"
-              variants={reveal}
-              initial="hidden"
-              animate="show"
-              custom={0.68}
-              // onClick={(e) => e.preventDefault()}
-            >
-              Contact Us
-            </motion.a>
+                Contact Us
+              </motion.a>
+
+              <div className="flex items-center rounded-full border px-1 py-1.5">
+                <CVPreview />
+              </div>
+            </div>
           </div>
           <div className="relative">
             <StickyButton />
