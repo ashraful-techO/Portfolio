@@ -1,3 +1,57 @@
+// "use client";
+
+// import { useState } from "react";
+// import { Button } from "@/components/ui/button";
+
+// const CVPreview = () => {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   return (
+//     <>
+//       <Button
+//         onClick={() => setIsOpen(true)}
+//         // variant="outline"
+//         size="sm"
+//         className="mt-0 bg-tranparent px-4 py-4 mx-4"
+//       >
+//         Resume
+//       </Button>
+
+//       {isOpen && (
+//         <div
+//           className="fixed inset-0 z-9999 flex items-center justify-center p-4"
+//           onClick={() => setIsOpen(false)}
+//         >
+//           <div
+//             className="flex h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl"
+//             onClick={(e) => e.stopPropagation()}
+//           >
+//             <div className="flex shrink-0 items-center justify-between border-b px-5 py-3">
+//               <h2 className="font-semibold text-slate-900">CV Preview</h2>
+//               <button
+//                 onClick={() => setIsOpen(false)}
+//                 className="flex h-8 w-8 items-center justify-center rounded-md text-xl text-slate-500 transition hover:bg-slate-100 hover:text-slate-900"
+//               >
+//                 ×
+//               </button>
+//             </div>
+
+//             <div className="flex-1 bg-slate-50">
+//               <iframe
+//                 src="/cv.pdf"
+//                 className="h-full w-full border-none"
+//                 title="CV PDF Preview"
+//               />
+//             </div>
+//           </div>
+//         </div>
+//       )}
+//     </>
+//   );
+// };
+
+// export default CVPreview;
+
 "use client";
 
 import { useState } from "react";
@@ -9,27 +63,32 @@ const CVPreview = () => {
   return (
     <>
       <Button
+        type="button"
         onClick={() => setIsOpen(true)}
-        // variant="outline"
-        size="sm"
-        className="mt-0 bg-tranparent px-4 py-4 mx-4"
+        className="plh-btn plh-btn--light"
       >
         Resume
       </Button>
 
       {isOpen && (
         <div
-          className="fixed inset-0 z-9999 flex items-center justify-center p-4"
+          className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
           onClick={() => setIsOpen(false)}
         >
           <div
             className="flex h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-xl bg-white shadow-2xl"
             onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            aria-label="CV Preview"
           >
             <div className="flex shrink-0 items-center justify-between border-b px-5 py-3">
               <h2 className="font-semibold text-slate-900">CV Preview</h2>
+
               <button
+                type="button"
                 onClick={() => setIsOpen(false)}
+                aria-label="Close CV preview"
                 className="flex h-8 w-8 items-center justify-center rounded-md text-xl text-slate-500 transition hover:bg-slate-100 hover:text-slate-900"
               >
                 ×

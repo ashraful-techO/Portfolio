@@ -311,8 +311,7 @@
   align-items: center;
   gap: 6px;
   justify-self: end;
-  border: green;
-  border-width: 2px solid green;
+  /* Keep the navigation actions visually clean. */
 }
 
 .plh-nav__link {
@@ -543,10 +542,38 @@
 
 .plh-ctas {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
   justify-content: center;
   gap: 10px;
   margin-top: clamp(2px, 0.8vh, 8px);
+  min-width: 0;
+}
+
+.plh-ctas>* {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+/* The CV preview trigger should sit on the same baseline as the CTA links.
+   These rules do not alter the preview iframe or its modal behavior. */
+.plh-ctas .cv-preview-trigger,
+.plh-ctas .cv-preview-button,
+.plh-ctas [data-cv-preview-trigger] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.plh-ctas iframe {
+  max-width: 100%;
 }
 
 .plh-ctas .plh-btn {
@@ -601,9 +628,27 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
+  .plh-ctas {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 8px;
+  }
+
   .plh-ctas .plh-btn {
-    padding: 0 18px;
+    padding: 0 16px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  .plh-ctas {
+    gap: 8px;
+  }
+
+  .plh-ctas .plh-btn {
+    padding: 0 12px;
+    font-size: 12px;
   }
 }
 
