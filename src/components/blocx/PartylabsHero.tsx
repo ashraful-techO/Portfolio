@@ -584,7 +584,7 @@ export default function PartylabsHero() {
               </li>
 
               <li>
-                <Button className="w-6 h-6 rounded-full font-medium cursor-pointer">
+                <Button className="w-6 h-6 rounded-full font-medium cursor-pointer plh-icon">
                   <ThemeToggle />
                 </Button>
               </li>
