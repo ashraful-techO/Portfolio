@@ -527,7 +527,8 @@
   font-weight: 500;
   line-height: 1.02;
   letter-spacing: -0.048em;
-  text-wrap: balance;
+  /* text-wrap: balance; */
+  text-wrap: nowrap;
 }
 
 .plh-title__w {
