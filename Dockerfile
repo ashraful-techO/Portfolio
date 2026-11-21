@@ -13,8 +13,6 @@ COPY . .
 
 RUN pnpm run build
 
-RUN pnpm add -g serve
-
 EXPOSE 3000
 
-CMD ["serve", "-s", "out", "-l", "3000"]
+CMD ["pnpm", "dlx", "serve", "-s", "out", "-l", "3000"]
